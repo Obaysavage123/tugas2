@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+<html>
+    <head> <title>Belajar HTML</title> 
+    </head>
+    <body>
+        <form action="prosesdata.php" method="post">
+            <!-- Textbox Menerima Inputan Biasa Berupa Inputan Text -->
+             Nama: <input type="text" name="nama" value="Nama Kamu" /> <br />
+            <!--  Tapi Text Yang Diinputkan Tidak Akan Terlihat Atau Transparan -->
+            Password: <input type="password" name="password" /> <br /> 
+            <!-- Inputan Berupa Checkbox Yang Dapat Diceklist Oleh User -->
+            Jenis Kelamin :  <input type="radio" name="jenis_kelamin" value="laki-laki" checked /> 
+            <!--  User Hanya Bisa Memilih Salah Satu Diantara Pilihan Group Radio -->
+            <input type="radio" name="jenis_kelamin" value="perempuan" />  Perempuan <br />
+            <!--  Akan Menampilkan Tombol, Untuk Memproses Form -->
+            Hobi: <input type="checkbox" name="hobi_baca" /> Membaca Buku<input type="checkbox" name="hobi_nulis" checked /> 
+            Menulis       <input type="checkbox" name="hobi_mancing" /> Memancing <br />
+            <!-- Ketika Form Dikirim Untuk diproses, Nilai Dari Tag <option> Akan Di Send Atau Dikirim.  -->
+                    Asal Kota:  <select name="asal_kota" >      <option value="Kota Jakarta"> Jakarta</option>      <option>Bandung</option>     <option value="Kota Semarang" selected>Semarang</option>  
+                    </select> <br />
+                    Komentar Anda:<textarea name="komentar" rows="5" cols="20"> Silahkan katakan isi hati anda </textarea> <br /> 
+
+
+            <input type="submit" value="Mulai proses" />
+        </form>
+         
+
+    </body>
+</html>
